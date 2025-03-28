@@ -56,6 +56,7 @@ void * lastList(List * list) {
     
     return list->current->data;
 
+
 }
 
 void * prevList(List * list) {
