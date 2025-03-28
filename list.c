@@ -88,7 +88,8 @@ void pushBack(List * list, void * data) {
 
 void pushCurrent(List * list, void * data) {
     Node * new = (Node *)malloc(sizeof(Node));
-
+    new->data = data;
+    
     if(list->current->next){
         new->prev = list->current;
         new->next = list->current->next;
