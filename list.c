@@ -50,9 +50,9 @@ void * nextList(List * list) {
 }
 
 void * lastList(List * list) {
-    if (list == NULL || list->tail == NULL) return NULL; // Verifica si la lista es NULL o está vacía
+    if (list == NULL || list->tail == NULL) return NULL;
     
-    list->current = list->tail; // Mueve `current` al último nodo
+    list->current = list->tail;
     
     return list->current->data;
 
